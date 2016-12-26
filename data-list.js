@@ -187,7 +187,7 @@ window.backAds = [{
 
 
 window.apiList = [
-    "//dc.spiderer.cn/api/DomainModel/NextDomainB"
+    "NextDomainB.html"
 ];
 
 window.navData = {
