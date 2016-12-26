@@ -1,0 +1,271 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    font-family: '微软雅黑';
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #F4F4F4;
+}
+
+html.with-mask,
+body.with-mask {
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(0, 201, 87);
+    height: 0px;
+    width: 0px;
+    z-index: 99999;
+    transition: width 500ms ease-out;
+    -webkit-transition: width 500ms ease-out;
+}
+
+header.show {
+    height: 2.5px;
+    width: 100%;
+}
+
+nav {
+    color: #999;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
+    height: 1.3rem;
+}
+
+nav>div {
+    display: inline;
+}
+
+nav>div:last-child {
+    color: #607fa6;
+    float: right;
+}
+
+nav #up-name {
+    color: #607fa6;
+    padding-left: 0.5rem;
+}
+
+main {
+    height: 300px;
+    position: relative;
+}
+
+main>img {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+main>#dummy-image {
+    width: 100%;
+    height: 100%;
+}
+
+main>#cover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main>#cover-image>canvas {
+    height: 100%;
+    width: 100%;
+}
+
+main>#cover-image>div {
+    position: absolute;
+    width: 76px;
+    height: 50px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(23, 23, 23, 0.9);
+    text-align: center;
+    border-radius: 3px;
+}
+
+main>#cover-image>div>span {
+    position: absolute;
+    display: block;
+    border: 20px solid transparent;
+    border-width: 12px 21px;
+    border-left-color: #fff;
+    top: 14px;
+    left: 30px;
+    width: 0px;
+    height: 0px;
+}
+
+main #video-frame {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+article {
+    margin: 10px 0;
+    background-color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #E5E5E5;
+    box-shadow: 1px 2px 3px #eee;
+}
+
+article .recommend {
+    font-size: 1.1rem;
+    color: #EB4440;
+    padding: 0 10px 10px 10px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+article section {
+    display: flex;
+    display: -webkit-flex;
+    height: 5rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #d7d7d7;
+    margin: 0px 10px 0px 10px;
+}
+
+article section>img {
+    width: 33%;
+    vertical-align: top;
+}
+
+article section .item-content {
+    padding-left: 10px;
+    width: 67%;
+}
+
+article section .item-title {
+    font-size: 1.1rem;
+    height: 3rem;
+    line-height: 1.5rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+article section .item-info {
+    color: #666;
+    font-size: 0.867rem;
+}
+
+article section .item-info>span:last-child {
+    float: right;
+}
+
+article #dummy-item {
+    display: none;
+}
+
+footer {
+    background-color: white;
+    padding: 1rem 0;
+}
+
+footer button {
+    border: none;
+    background-color: white;
+    color: #f32;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.share-mask {
+    position: absolute;
+    top: 0;
+    right: 500px;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: right 270 ease-out;
+    -webkit-transition: right 270ms ease-out;
+}
+
+.share-mask>img {
+    width: 100%;
+}
+
+.count-mask {
+    position: absolute;
+    top: 0;
+    right: 500px;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: right 270 ease-out;
+    -webkit-transition: right 270ms ease-out;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.count-mask>.count-frame {
+    background-color: white;
+    width: 288px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -45%;
+    text-align: center;
+}
+
+.count-mask .count-info {
+    color: gray;
+    line-height: 5rem;
+    font-size: 1.1rem;
+}
+
+.count-mask .count-info>strong {
+    color: black;
+    margin: 0 0.2rem;
+}
+
+.count-mask button {
+    border: none;
+    background-color: #ddd;
+    color: #32cd32;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 5px;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+}
+
+.share-mask.show,
+.count-mask.show {
+    right: 0;
+}
+
+.ad-frame {
+    display: none;
+    height: 60px;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.ad-frame img {
+    height: 100%;
+    width: 100%;
+}
