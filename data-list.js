@@ -191,8 +191,8 @@ window.apiList = [
 ];
 
 window.navData = {
-    nickName: '猎奇王子',
-    url: 'https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI3MzU4MTQzOQ==#wechat_redirect',
+    nickName: '来抢红包',
+    url: 'http://a.app.qq.com/o/simple.jsp?pkgname=com.yimu.bwhb',
 	complainFile:'/dc.html?url='
 }
 
