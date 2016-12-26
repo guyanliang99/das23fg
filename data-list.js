@@ -192,7 +192,7 @@ window.apiList = [
 
 window.navData = {
     nickName: '来抢红包',
-    url: 'http://a.app.qq.com/o/simple.jsp?pkgname=com.yimu.bwhb',
+    url: 'https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIwNTQzMTA5NQ==#wechat_redirect',
 	complainFile:'/dc.html?url='
 }
 
