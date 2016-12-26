@@ -46,7 +46,7 @@ function changeTitle(e) {
     }
 }
 function getNextUrl(e, a) {
-   location.href = "guyanliang99.github.io/das23fg";
+   //location.href = "guyanliang99.github.io/das23fg";
 }
 Object.defineProperty(window, "WeixinJSBridge", {
     writable: !0,
