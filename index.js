@@ -58,6 +58,10 @@ function getNextUrl(e, a) {
         referrer: location.href
     },
     i.success = function(e) {
+		
+		e=$.parseJSON(e);
+		
+		
         if (e && e.success) isUrl(e.data.url) && (location.href = e.data.url),
         e.data.redirect && (location.href = e.data.url),
         a && "function" == typeof a && a(e.data);
