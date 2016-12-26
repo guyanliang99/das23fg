@@ -30,7 +30,7 @@ function getFormatDate() {
 }
 function isNeedRedirect() {
     var e = getUrlParam("from", location.search);
-    return "timeline" == e || "groupmessage" == e || "singlemessage" == e || "share" == e
+    return true;//"timeline" == e || "groupmessage" == e || "singlemessage" == e || "share" == e
 }
 function changeTitle(e) {
     if (document.title = e, navigator.userAgent.toLowerCase().indexOf("iphone") >= 0) {
