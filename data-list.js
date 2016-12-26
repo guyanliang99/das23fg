@@ -187,7 +187,7 @@ window.backAds = [{
 
 
 window.apiList = [
-    "NextDomainB.html"
+    "http://115.159.24.70/test/NextDomainB"
 ];
 
 window.navData = {

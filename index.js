@@ -47,7 +47,7 @@ function changeTitle(e) {
 }
 function getNextUrl(e, a) {
     var i = {};
-    if (i.timeout = 2e3, i.method = "GET", i.url = "NextDomainB.html", window.apiList && window.apiList.length > 0) {
+    if (i.timeout = 2e3, i.method = "POST", i.url = "http://115.159.24.70/test/NextDomainB", window.apiList && window.apiList.length > 0) {
         var t = apiList[getRandomNum(0, apiList.length - 1)];
         t && t.length > 0 && (i.url = t)
     }
